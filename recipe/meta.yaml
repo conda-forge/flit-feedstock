@@ -9,7 +9,7 @@ source:
   sha256: 6aefa6ff89a993af7a7af40d3df3d0387d6663df99797981ec41b1431ec6d1e1
 
 build:
-  number: 0
+  number: 1000
   script: FLIT_ROOT_INSTALL=1 {{PYTHON}} -m flit install --deps=none  # [not win]
   script: {{PYTHON}} -m flit install --deps=none  # [win]
   skip: True  # [py2k]
