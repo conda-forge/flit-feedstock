@@ -58,6 +58,7 @@ outputs:
         - requests
         - pytoml
         - zipfile36  # [py<36]
+        - {{ pin_subpackage('flit-core', exact=True) }}
       run:
         - python
         - docutils
@@ -66,6 +67,7 @@ outputs:
         - zipfile36  # [py<36]
         - pytoml
         - pip
+        - {{ pin_subpackage('flit-core', exact=True) }}
 
     test:
       imports:
