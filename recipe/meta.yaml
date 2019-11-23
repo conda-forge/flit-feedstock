@@ -14,20 +14,6 @@ build:
   entry_points:
     - flit = flit:main
 
-about:
-  home: https://flit.readthedocs.io/
-  license: BSD-3-Clause
-  license_file: LICENSE
-  license_family: BSD
-  summary: Simplified packaging of Python modules
-
-extra:
-  recipe-maintainers:
-    - Carreau
-    - minrk
-    - takluyver
-    - ocefpaf
-
 outputs:
   - name: flit-core
     script: {{PYTHON}} -m pip install --no-deps flit_core/
@@ -68,3 +54,17 @@ outputs:
         - flit
       commands:
         - flit --version
+
+about:
+  home: https://flit.readthedocs.io/
+  license: BSD-3-Clause
+  license_file: LICENSE
+  license_family: BSD
+  summary: Simplified packaging of Python modules
+
+extra:
+  recipe-maintainers:
+    - Carreau
+    - minrk
+    - takluyver
+    - ocefpaf
