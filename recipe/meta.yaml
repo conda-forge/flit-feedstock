@@ -14,6 +14,23 @@ build:
   entry_points:
     - flit = flit:main
 
+requirements:
+  host:
+    - python
+    - pip
+    - docutils
+    - requests
+    - pytoml
+    - zipfile36  # [py<36]
+  run:
+    - python
+    - docutils
+    - requests
+    - requests_download
+    - zipfile36  # [py<36]
+    - pytoml
+    - pip
+
 outputs:
   - name: flit-core
     script: {{PYTHON}} -m pip install --no-deps flit_core/
