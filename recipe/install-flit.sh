@@ -1,1 +1,1 @@
-FLIT_ROOT_INSTALL=1 $PYTHON -m flit install --deps=none
+PYTHONPATH=flit_core/ FLIT_ROOT_INSTALL=1 $PYTHON -m flit install --deps=none
