@@ -10,34 +10,9 @@ source:
 
 build:
   number: 0
-  script: FLIT_ROOT_INSTALL=1 {{PYTHON}} -m flit install --deps=none  # [not win]
-  script: {{PYTHON}} -m flit install --deps=none  # [win]
   skip: True  # [py2k]
   entry_points:
     - flit = flit:main
-
-requirements:
-  host:
-    - python
-    - pip
-    - docutils
-    - requests
-    - pytoml
-    - zipfile36  # [py<36]
-  run:
-    - python
-    - docutils
-    - requests
-    - requests_download
-    - zipfile36  # [py<36]
-    - pytoml
-    - pip
-
-test:
-  imports:
-    - flit
-  commands:
-    - flit --version
 
 about:
   home: https://flit.readthedocs.io/
@@ -52,3 +27,44 @@ extra:
     - minrk
     - takluyver
     - ocefpaf
+
+outputs:
+  - name: flit-core
+    script: {{PYTHON}} -m pip install --no-deps flit_core/
+    requirements:
+      host:
+        - python
+        - pip
+        - pytoml
+      run:
+        - python
+        - pytoml
+      test:
+        imports:
+          - flit_core
+
+  - name: flit
+    script: FLIT_ROOT_INSTALL=1 {{PYTHON}} -m flit install --deps=none  # [not win]
+    script: {{PYTHON}} -m flit install --deps=none  # [win]
+    requirements:
+      host:
+        - python
+        - pip
+        - docutils
+        - requests
+        - pytoml
+        - zipfile36  # [py<36]
+      run:
+        - python
+        - docutils
+        - requests
+        - requests_download
+        - zipfile36  # [py<36]
+        - pytoml
+        - pip
+
+    test:
+      imports:
+        - flit
+      commands:
+        - flit --version
