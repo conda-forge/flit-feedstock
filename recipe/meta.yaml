@@ -33,7 +33,8 @@ requirements:
 
 outputs:
   - name: flit-core
-    script: {{PYTHON}} -m pip install --no-deps flit_core/
+    script: install-core.sh  # [not win]
+    script: install-core.bat  # [win]
     requirements:
       host:
         - python
@@ -47,8 +48,8 @@ outputs:
           - flit_core
 
   - name: flit
-    script: FLIT_ROOT_INSTALL=1 {{PYTHON}} -m flit install --deps=none  # [not win]
-    script: {{PYTHON}} -m flit install --deps=none  # [win]
+    script: install-flit.sh  # [not win]
+    script: install-flit.bat  # [win]
     requirements:
       host:
         - python
