@@ -1,5 +1,5 @@
-About flit
-==========
+About flit-core
+===============
 
 Home: https://flit.readthedocs.io/
 
@@ -15,128 +15,11 @@ Current build status
 ====================
 
 
-<table>
-    
-  <tr>
-    <td>Azure</td>
+<table><tr><td>All platforms:</td>
     <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>linux_aarch64_python3.6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_python3.6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_python3.7</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_python3.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_python3.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_python3.8" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_python3.6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_python3.6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_python3.7</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_python3.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_python3.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_python3.8" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_python3.6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master&jobName=linux&configuration=linux_python3.6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_python3.7</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master&jobName=linux&configuration=linux_python3.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_python3.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master&jobName=linux&configuration=linux_python3.8" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_python3.6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master&jobName=osx&configuration=osx_python3.6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_python3.7</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master&jobName=osx&configuration=osx_python3.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_python3.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master&jobName=osx&configuration=osx_python3.8" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_python3.6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master&jobName=win&configuration=win_python3.6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_python3.7</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master&jobName=win&configuration=win_python3.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_python3.8</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master&jobName=win&configuration=win_python3.8" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=321&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/flit-feedstock?branchName=master">
+      </a>
     </td>
   </tr>
 </table>
@@ -147,20 +30,21 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-flit-green.svg)](https://anaconda.org/conda-forge/flit) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/flit.svg)](https://anaconda.org/conda-forge/flit) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/flit.svg)](https://anaconda.org/conda-forge/flit) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/flit.svg)](https://anaconda.org/conda-forge/flit) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-flit--core-green.svg)](https://anaconda.org/conda-forge/flit-core) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/flit-core.svg)](https://anaconda.org/conda-forge/flit-core) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/flit-core.svg)](https://anaconda.org/conda-forge/flit-core) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/flit-core.svg)](https://anaconda.org/conda-forge/flit-core) |
 
-Installing flit
-===============
+Installing flit-core
+====================
 
-Installing `flit` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `flit-core` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `flit` can be installed with:
+Once the `conda-forge` channel has been enabled, `flit, flit-core` can be installed with:
 
 ```
-conda install flit
+conda install flit flit-core
 ```
 
 It is possible to list all of the versions of `flit` available on your platform with:
@@ -208,17 +92,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating flit-feedstock
-=======================
+Updating flit-core-feedstock
+============================
 
-If you would like to improve the flit recipe or build a new
+If you would like to improve the flit-core recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/flit-feedstock are
+Note that all branches in the conda-forge/flit-core-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
