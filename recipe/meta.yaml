@@ -1,7 +1,7 @@
 {% set version = "2.1.0" %}
 
 package:
-  name: flit
+  name: flit-split
   version: {{ version }}
 
 source:
