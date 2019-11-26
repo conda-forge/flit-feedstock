@@ -1,73 +1,67 @@
 {% set version = "2.1.0" %}
 
 package:
-  name: flit
+  name: flit-core
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/f/flit/flit-{{ version }}.tar.gz
   sha256: 6c954c3ec4e87a84fac55cca1a1d692a39354affa7c791eb49f6631b71ddbb40
+  folder: source
 
 build:
   number: 0
-  skip: True  # [py2k]
-  entry_points:
-    - flit = flit:main
 
+# Specifying `python` as a top-level build requirements to force conda to
+# render the recipe correctly
 requirements:
   host:
-    - python
-    - pip
-    - docutils
-    - requests
-    - pytoml
-    - zipfile36  # [py<36]
-  run:
-    - python
-    - docutils
-    - requests
-    - requests_download
-    - zipfile36  # [py<36]
-    - pytoml
-    - pip
+    - python >=3.6
 
 outputs:
   - name: flit-core
-    script: install-core.sh  # [not win]
-    script: install-core.bat  # [win]
+    version: {{ version }}
+    build:
+      script: python -m pip install --no-deps -vv source/flit_core/
+      noarch: python
     requirements:
       host:
-        - python
+        - python >=3.6
         - pip
-        - pytoml
       run:
-        - python
+        - python >=3.6
         - pytoml
-      test:
-        imports:
-          - flit_core
+    test:
+      imports:
+        - flit_core
+        - flit_core.common
 
   - name: flit
-    script: install-flit.sh  # [not win]
-    script: install-flit.bat  # [win]
+    version: {{ version }}
+    build:
+      script: cd source/ && FLIT_ROOT_INSTALL=1 python -m flit install --deps=none
+      noarch: python
+      entry_points:
+        - flit = flit:main
     requirements:
       host:
-        - python
+        - python >=3.6
         - pip
-        - docutils
-        - requests
-        - pytoml
-        - zipfile36  # [py<36]
-      run:
-        - python
         - docutils
         - requests
         - requests_download
-        - zipfile36  # [py<36]
+        - pygments
         - pytoml
-        - pip
         - {{ pin_subpackage('flit-core', exact=True) }}
-
+      run:
+        - python >=3.6
+        - pip
+        - docutils
+        - requests
+        - requests_download
+        - pygments
+        - pytoml
+        - {{ pin_subpackage('flit-core', exact=True) }}
     test:
       imports:
         - flit
@@ -77,8 +71,8 @@ outputs:
 about:
   home: https://flit.readthedocs.io/
   license: BSD-3-Clause
-  license_file: LICENSE
   license_family: BSD
+  license_file: source/LICENSE
   summary: Simplified packaging of Python modules
 
 extra:
