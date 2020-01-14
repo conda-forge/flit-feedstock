@@ -1,4 +1,4 @@
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 package:
   name: flit-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/flit/flit-{{ version }}.tar.gz
-  sha256: 6c954c3ec4e87a84fac55cca1a1d692a39354affa7c791eb49f6631b71ddbb40
+  sha256: a273dc2a5ab1f42f0e02878347d94f5462c42cbe232a5014b6778c9e5975327f
   folder: source
 
 build:
