@@ -5,7 +5,7 @@ Home: https://flit.readthedocs.io/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Simplified packaging of Python modules
 
