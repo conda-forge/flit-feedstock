@@ -50,7 +50,6 @@ outputs:
         - docutils
         - requests
         - requests_download
-        - pygments
         - pytoml
         - {{ pin_subpackage('flit-core', exact=True) }}
       run:
@@ -59,7 +58,6 @@ outputs:
         - docutils
         - requests
         - requests_download
-        - pygments
         - pytoml
         - {{ pin_subpackage('flit-core', exact=True) }}
     test:
