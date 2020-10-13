@@ -15,6 +15,9 @@ build:
 # Specifying `python` as a top-level build requirements to force conda to
 # render the recipe correctly
 requirements:
+  build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - python >=3.6
 
