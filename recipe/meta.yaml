@@ -31,7 +31,7 @@ outputs:
         - pip
       run:
         - python >=3.6
-        - pytoml
+        - toml
     test:
       imports:
         - flit_core
@@ -51,7 +51,7 @@ outputs:
         - docutils
         - requests
         - requests_download
-        - pytoml
+        - toml
         - {{ pin_subpackage('flit-core', exact=True) }}
       run:
         - python >=3.6
@@ -59,7 +59,7 @@ outputs:
         - docutils
         - requests
         - requests_download
-        - pytoml
+        - toml
         - {{ pin_subpackage('flit-core', exact=True) }}
     test:
       imports:
