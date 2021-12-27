@@ -31,8 +31,6 @@ outputs:
         - pip
       run:
         - python >=3.6
-        - tomli
-        - tomli-w
     test:
       imports:
         - flit_core
