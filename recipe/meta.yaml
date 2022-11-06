@@ -49,7 +49,6 @@ outputs:
         - pip
         - docutils
         - requests
-        - tomli
         - tomli-w
         - {{ pin_subpackage('flit-core', exact=True) }}
       run:
@@ -57,7 +56,6 @@ outputs:
         - pip
         - docutils
         - requests
-        - tomli
         - tomli-w
         - {{ pin_subpackage('flit-core', exact=True) }}
     test:
