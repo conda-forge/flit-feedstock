@@ -1,7 +1,7 @@
 {% set version = "3.9.0" %}
 
 package:
-  name: flit-core
+  name: flit
   version: {{ version }}
 
 source:
@@ -10,59 +10,33 @@ source:
   folder: source
 
 build:
+  script: cd source/ && FLIT_ROOT_INSTALL=1 python -m flit install --deps=none
   noarch: python
-  number: 0
+  entry_points:
+    - flit = flit:main
+  number: 1
 
-# Specifying `python` as a top-level build requirements to force conda to
-# render the recipe correctly
 requirements:
   host:
     - python >=3.6
+    - pip
+    - docutils
+    - requests
+    - tomli-w
+    - flit-core =={{ version }}
+  run:
+    - python >=3.6
+    - pip
+    - docutils
+    - requests
+    - tomli-w
+    - flit-core =={{ version }}
 
-outputs:
-  - name: flit-core
-    version: {{ version }}
-    build:
-      script: python -m pip install --no-deps -vv source/flit_core/
-      noarch: python
-    requirements:
-      host:
-        - python >=3.6
-        - pip
-      run:
-        - python >=3.6
-    test:
-      imports:
-        - flit_core
-        - flit_core.common
-
-  - name: flit
-    version: {{ version }}
-    build:
-      script: cd source/ && FLIT_ROOT_INSTALL=1 python -m flit install --deps=none
-      noarch: python
-      entry_points:
-        - flit = flit:main
-    requirements:
-      host:
-        - python >=3.6
-        - pip
-        - docutils
-        - requests
-        - tomli-w
-        - {{ pin_subpackage('flit-core', exact=True) }}
-      run:
-        - python >=3.6
-        - pip
-        - docutils
-        - requests
-        - tomli-w
-        - {{ pin_subpackage('flit-core', exact=True) }}
-    test:
-      imports:
-        - flit
-      commands:
-        - flit --version
+test:
+  imports:
+    - flit
+  commands:
+    - flit --version
 
 about:
   home: https://flit.readthedocs.io/
