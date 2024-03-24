@@ -23,7 +23,7 @@ requirements:
     - docutils
     - requests
     - tomli-w
-    - flit-core =={{ version }}
+    - flit-core {{ version }}
   run:
     - python >=3.6
     - pip
