@@ -30,7 +30,7 @@ requirements:
     - docutils
     - requests
     - tomli-w
-    - flit-core =={{ version }}
+    - flit-core {{ version }}
 
 test:
   imports:
