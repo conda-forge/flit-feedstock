@@ -1,5 +1,5 @@
-About flit-core-feedstock
-=========================
+About flit-feedstock
+====================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flit-feedstock/blob/main/LICENSE.txt)
 
@@ -28,28 +28,27 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-flit-green.svg)](https://anaconda.org/conda-forge/flit) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/flit.svg)](https://anaconda.org/conda-forge/flit) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/flit.svg)](https://anaconda.org/conda-forge/flit) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/flit.svg)](https://anaconda.org/conda-forge/flit) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-flit--core-green.svg)](https://anaconda.org/conda-forge/flit-core) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/flit-core.svg)](https://anaconda.org/conda-forge/flit-core) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/flit-core.svg)](https://anaconda.org/conda-forge/flit-core) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/flit-core.svg)](https://anaconda.org/conda-forge/flit-core) |
 
-Installing flit-core
-====================
+Installing flit
+===============
 
-Installing `flit-core` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `flit` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `flit, flit-core` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `flit` can be installed with `conda`:
 
 ```
-conda install flit flit-core
+conda install flit
 ```
 
 or with `mamba`:
 
 ```
-mamba install flit flit-core
+mamba install flit
 ```
 
 It is possible to list all of the versions of `flit` available on your platform with `conda`:
@@ -119,17 +118,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating flit-core-feedstock
-============================
+Updating flit-feedstock
+=======================
 
-If you would like to improve the flit-core recipe or build a new
+If you would like to improve the flit recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/flit-core-feedstock are
+Note that all branches in the conda-forge/flit-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
