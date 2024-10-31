@@ -1,4 +1,4 @@
-{% set version = "3.9.0" %}
+{% set version = "3.10.0" %}
 
 package:
   name: flit
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/flit/flit-{{ version }}.tar.gz
-  sha256: d75edf5eb324da20d53570a6a6f87f51e606eee8384925cd66a90611140844c7
+  sha256: dadca58d5097db62884d25d70b572f104954927daadc8cee449739215b7237fd
   folder: source
 
 build:
@@ -14,7 +14,7 @@ build:
   noarch: python
   entry_points:
     - flit = flit:main
-  number: 1
+  number: 0
 
 requirements:
   host:
