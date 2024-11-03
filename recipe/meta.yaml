@@ -18,14 +18,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - docutils
     - requests
     - tomli-w
     - flit-core {{ version }}
   run:
-    - python >=3.6
+    - python >=3.8
     - pip
     - docutils
     - requests
@@ -39,7 +39,7 @@ test:
     - flit --version
 
 about:
-  home: https://flit.readthedocs.io/
+  home: https://flit.pypa.io/
   license: BSD-3-Clause
   license_family: BSD
   license_file: source/LICENSE
