@@ -3,7 +3,7 @@ About flit-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flit-feedstock/blob/main/LICENSE.txt)
 
-Home: https://flit.readthedocs.io/
+Home: https://flit.pypa.io/
 
 Package license: BSD-3-Clause
 
