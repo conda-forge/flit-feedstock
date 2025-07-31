@@ -1,4 +1,4 @@
-{% set version = "3.9.0" %}
+{% set version = "3.12.0" %}
 
 package:
   name: flit-suite
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/flit/flit-{{ version }}.tar.gz
-  sha256: d75edf5eb324da20d53570a6a6f87f51e606eee8384925cd66a90611140844c7
+  sha256: 1c80f34dd96992e7758b40423d2809f48f640ca285d0b7821825e50745ec3740
   folder: source
 
 build:
@@ -33,6 +33,8 @@ outputs:
     requirements:
       host:
         - python
+        - wheel
+        - setuptools
       run:
         - python
     test:
