@@ -4,6 +4,7 @@ bot:
   # immediately and CI fails until flit-core-feedstock has built and uploaded.
   # With it, the bot only opens the PR once the recipe actually solves.
   check_solvable: true
+  automerge: true
 provider: {linux_aarch64: azure, linux_ppc64le: azure, win: azure}
 conda_forge_output_validation: true
 github:
