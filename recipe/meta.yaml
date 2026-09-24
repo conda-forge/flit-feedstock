@@ -1,12 +1,12 @@
-{% set version = "4.0.2" %}
+{% set version = "4.1.0" %}
 
 package:
   name: flit
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/f/flit/flit-{{ version }}.tar.gz
-  sha256: 232bc4317279e8952eca9fb3f5e000d8395d693b39c105b99f619ce461e1da85
+  url: https://files.pythonhosted.org/packages/source/f/flit/flit-{{ version }}.tar.gz
+  sha256: 18b463c435db03b8cbecf139b6b0bb285b2dfd8a7e623558136abd66f4a04af4
   folder: source
 
 build:
